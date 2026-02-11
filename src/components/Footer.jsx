@@ -33,21 +33,26 @@ const Footer = async () => {
              
 
               <Suspense
-                fallback={
-                 [Array.from({ length: 2 }, (_, i) => (
-                  <div class="shadow rounded-md p-4 max-w-sm w-full mx-auto">
-                  <div class="animate-pulse flex space-x-4">
-                    <div class="rounded-full bg-slate-700 h-10 w-10"></div>
-                    <div class="flex-1 space-y-6 py-1">
-                      <div class="h-2 bg-slate-700 rounded"></div>
-                      <div class="space-y-3">
-                        <div class="h-2 bg-slate-700 rounded"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                 ))]
-                }
+               fallback={
+  <>
+    {Array.from({ length: 2 }).map((_, i) => (
+      <div
+        key={i}
+        className="shadow rounded-md p-4 max-w-sm w-full mx-auto"
+      >
+        <div className="animate-pulse flex space-x-4">
+          <div className="rounded-full bg-slate-700 h-10 w-10"></div>
+          <div className="flex-1 space-y-6 py-1">
+            <div className="h-2 bg-slate-700 rounded"></div>
+            <div className="space-y-3">
+              <div className="h-2 bg-slate-700 rounded"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    ))}
+  </>
+}
               >
                 <TopReadsBlogs />
               </Suspense>
@@ -74,7 +79,7 @@ const Footer = async () => {
                     className=" hover:opacity-50"
                     src="/icons/fb.svg"
                     width={30}
-                    objectFit="cover"
+                    style={{ objectFit: "cover" }}
                     height={30}
                     alt="footerLogo"
                   />
@@ -152,7 +157,7 @@ const Footer = async () => {
               >
                 <Image
                   className=""
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
                   src="/icons/location.svg"
                   width={25}
                   height={25}
