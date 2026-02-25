@@ -5,7 +5,7 @@ import MarginWrapper from "./marginWrapper";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Estates, Probate, and Trust Attorney Firm Ocala, Fl",
+  title: "Estates, Probate, and Trust Attorney Firm Ocala, FL",
   description:
     "e-Estates and Trusts offers virtual and concierge legal services. Best Estate Planning, Probate, and Trust Administration Attorney firm in Florida Ocala.",
 };
