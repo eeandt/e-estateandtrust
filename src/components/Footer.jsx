@@ -188,7 +188,7 @@ const Footer = async () => {
         <MarginWrapper>
           <div className="md:flex justify-between">
             <p className="text-[#FFFFFF] text-sm  opacity-[0.5]  font-Nunito">
-              ©Copyright 2025 by <Link href={"/"}>e-estatesandtrusts.com</Link>{" "}
+              ©Copyright 2026 by <Link href={"/"}>e-estatesandtrusts.com</Link>{" "}
               All Rights Reserved.
             </p>
             <div className="flex  items-center">
@@ -213,3 +213,4 @@ const Footer = async () => {
 };
 
 export default Footer;
+
