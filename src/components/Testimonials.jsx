@@ -140,7 +140,7 @@ const Testimonials = () => {
             <Image
               style={{ objectFit: "cover" }}
               className="p-1 bg-[#085FA0] "
-              src="/icons/judge-hand.jpg"
+              src="/icons/judge-hand.png"
               height={500}
               width={500}
               alt="about us"
